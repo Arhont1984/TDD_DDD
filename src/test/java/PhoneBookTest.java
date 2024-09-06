@@ -24,4 +24,14 @@ public class PhoneBookTest {
         Assertions.assertEquals("89629248553", phoneBook.findByName("Kirill").toString());
     }
 
+    @Test
+    public void printAllNames() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Kirill", "89629248553");
+        phoneBook.add("Andrey", "89629248552");
+        phoneBook.add("Zoiya", "89629248551");
+        Assertions.assertTrue(phoneBook.names.getFirst().equals("Andrey")&& phoneBook.printAllNames() != null);
+
+    }
+
 }

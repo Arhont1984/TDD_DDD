@@ -32,4 +32,10 @@ public class PhoneBook {
         return contacts.get(name);
     }
 
+    //Метод для вывода имён
+    public Object printAllNames() {
+        return null;
+    }
+
+
 }
