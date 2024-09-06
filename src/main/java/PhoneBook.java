@@ -17,9 +17,14 @@ public class PhoneBook {
         return contacts.size(); // Возвращаем количество контактов
     }
 
+    //метод для поиска по номеру
     public Object findByNumber(String number) {
-
-        return null;
+        for (var entry : contacts.entrySet()) {
+            if (entry.getValue().equals(number)) {
+                return entry.getKey();
+            }
+        }
+        return null; // Если номер не найден
     }
 
 }
