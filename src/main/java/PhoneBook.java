@@ -10,7 +10,11 @@ public class PhoneBook {
 
 
     public int add(String name, String number) {
-        return 0;
+        if (!contacts.containsKey(name)) {
+            contacts.put(name, number);
+            names.add(name);
+        }
+        return contacts.size(); // Возвращаем количество контактов
     }
 
 }
