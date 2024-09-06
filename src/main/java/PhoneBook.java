@@ -29,7 +29,7 @@ public class PhoneBook {
 
     //Метод для поиска по имени
     public String findByName(String name) {
-        return null;
+        return contacts.get(name);
     }
 
 }
