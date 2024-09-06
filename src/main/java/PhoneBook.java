@@ -17,4 +17,9 @@ public class PhoneBook {
         return contacts.size(); // Возвращаем количество контактов
     }
 
+    public Object findByNumber(String number) {
+
+        return null;
+    }
+
 }
