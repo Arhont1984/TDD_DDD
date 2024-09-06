@@ -17,4 +17,11 @@ public class PhoneBookTest {
         Assertions.assertEquals("Kirill", phoneBook.findByNumber("89629248553").toString());
     }
 
+    @Test
+    public void findByName() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Kirill", "89629248553");
+        Assertions.assertEquals("89629248553", phoneBook.findByName("Kirill").toString());
+    }
+
 }

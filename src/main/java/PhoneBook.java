@@ -27,4 +27,9 @@ public class PhoneBook {
         return null; // Если номер не найден
     }
 
+    //Метод для поиска по имени
+    public String findByName(String name) {
+        return null;
+    }
+
 }
